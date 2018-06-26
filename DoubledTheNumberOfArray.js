@@ -15,4 +15,5 @@ var doubled =numbers.map(function(number){
     return number *2;
 });
 console.log(doubled);
+
 // output -->[ 2, 4, 6 ]
