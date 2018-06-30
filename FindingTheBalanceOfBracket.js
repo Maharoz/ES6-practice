@@ -3,7 +3,7 @@ function balancedParens(string){
  return !string.split("").reduce(function(previous,char){
 
 
-        if (previous<0){return previous;}
+        if (previous<0){return previous;} //for input like ')('
         if (char === "(" ){return ++previous;}
         if (char === ")" ){return --previous;}
         return previous;
@@ -13,4 +13,8 @@ function balancedParens(string){
 }
 
 balancedParens("((((((");
+
+console.log(balancedParens("(((((("))
+
+//output false
 
