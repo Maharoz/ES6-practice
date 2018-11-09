@@ -9,9 +9,12 @@ for(var i=0;i<numbers.length;i++){
 
 console.log(sum);
 */
+
+//here 0 is initial value and iterating on each number and adding them
 var reduceHelper = numbers.reduce(function(sum,number){
     return sum + number;
 },0);
+
 console.log(reduceHelper);
 
 //output 60
